@@ -1,7 +1,7 @@
 FROM arm32v6/alpine
 LABEL maintainer="Tommy CHOISY"
 
-RUN apk -U add openssl
+RUN apk -U upgrade && apk add openssl
 
 ENV VERSION 0.7.4
 ENV DOWNLOAD_URL https://github.com/jwilder/docker-gen/releases/download/$VERSION/docker-gen-alpine-linux-armhf-$VERSION.tar.gz
